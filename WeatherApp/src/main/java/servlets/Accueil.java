@@ -97,8 +97,10 @@ public class Accueil extends HttpServlet {
 			WeatherType weather = rapport.getInJsonWeather();
 			String main = weather.weather();
 			String desc = weather.desc();
+			String icon = weather.icon();
 			request.setAttribute("main", main);
 			request.setAttribute("desc", desc);
+			request.setAttribute("icon", icon);
 			
 			this.getServletContext().getRequestDispatcher("/WEB-INF/accueil.jsp").forward(request, response);
 		} catch (JSONException e) {

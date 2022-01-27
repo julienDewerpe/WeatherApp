@@ -69,7 +69,8 @@ public class rapportMeteo {
 		JSONObject jsonWeather = (JSONObject) weather.get(0);
 		String main = jsonWeather.getString("main");
 		String desc = jsonWeather.getString("description");
-		WeatherType weatherType = new WeatherType(main, desc);
+		String icon = jsonWeather.getString("icon");
+		WeatherType weatherType = new WeatherType(main, desc, icon);
 		return weatherType;
 		
 	}
