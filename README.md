@@ -19,6 +19,6 @@ L'application utilise l'API **OpenWeathermap.org** afin d'obtenir les informatio
   - `org.json` : traiter les objets JSON de l'application
   - `bootstrap` : mettre en forme la page `accueil.jsp`
 
-L'application fonctionne sur un serveur local **Apache Tomcat**
+L'application fonctionne sur un serveur local **Apache Tomcat** v10.0
   
     
